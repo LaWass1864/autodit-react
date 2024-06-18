@@ -18,16 +18,21 @@ function App() {
           }}
         >
           {/* Trous d'intercalaire */}
-          <div className="absolute left-4 top-[5%] transform -translate-y-1/2 bg-gray-300 rounded-full" style={{ width: '20px', height: '20px' }}></div>
-          <div className="absolute left-4 top-[15%] transform -translate-y-1/2 bg-gray-300 rounded-full" style={{ width: '20px', height: '20px' }}></div>
-          <div className="absolute left-4 top-[25%] transform -translate-y-1/2 bg-gray-300 rounded-full" style={{ width: '20px', height: '20px' }}></div>
-          <div className="absolute left-4 top-[35%] transform -translate-y-1/2 bg-gray-300 rounded-full" style={{ width: '20px', height: '20px' }}></div>
-          <div className="absolute left-4 top-[45%] transform -translate-y-1/2 bg-gray-300 rounded-full" style={{ width: '20px', height: '20px' }}></div>
-          <div className="absolute left-4 top-[55%] transform -translate-y-1/2 bg-gray-300 rounded-full" style={{ width: '20px', height: '20px' }}></div>
-          <div className="absolute left-4 top-[65%] transform -translate-y-1/2 bg-gray-300 rounded-full" style={{ width: '20px', height: '20px' }}></div>
-          <div className="absolute left-4 top-[75%] transform -translate-y-1/2 bg-gray-300 rounded-full" style={{ width: '20px', height: '20px' }}></div>
-          <div className="absolute left-4 top-[85%] transform -translate-y-1/2 bg-gray-300 rounded-full" style={{ width: '20px', height: '20px' }}></div>
-          <div className="absolute left-4 top-[95%] transform -translate-y-1/2 bg-gray-300 rounded-full" style={{ width: '20px', height: '20px' }}></div>
+          <div className="absolute left-6 top-[9%] transform -translate-y-1/2 bg-gray-300 rounded-full" style={{ width: '20px', height: '20px' }}></div>
+          <div className="absolute left-6 top-[15%] transform -translate-y-1/2 bg-gray-300" style={{ width: '20px', height: '40px', borderRadius: '10px' }}></div>
+
+          <div className="absolute left-6 top-[29%] transform -translate-y-1/2 bg-gray-300 rounded-full" style={{ width: '20px', height: '20px' }}></div>
+          <div className="absolute left-6 top-[35%] transform -translate-y-1/2 bg-gray-300" style={{ width: '20px', height: '40px', borderRadius: '10px' }}></div>
+
+          <div className="absolute left-6 top-[50%] transform -translate-y-1/2 bg-gray-300 rounded-full" style={{ width: '20px', height: '20px' }}></div>
+         
+
+          <div className="absolute left-6 top-[66%] transform -translate-y-1/2 bg-gray-300" style={{ width: '20px', height: '40px', borderRadius: '10px' }}></div>
+          <div className="absolute left-6 top-[72%] transform -translate-y-1/2 bg-gray-300 rounded-full" style={{ width: '20px', height: '20px' }}></div>
+
+          <div className="absolute left-6 top-[90%] transform -translate-y-1/2 bg-gray-300" style={{ width: '20px', height: '40px', borderRadius: '10px' }}></div>
+          <div className="absolute left-6 top-[96%] transform -translate-y-1/2 bg-gray-300 rounded-full" style={{ width: '20px', height: '20px' }}></div>
+
 
 
         </div>
