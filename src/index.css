@@ -1,27 +1,27 @@
+/* Typographie du site */
+
+/* Importation de la police Gloria Hallelujah */
+@font-face {
+  font-family: 'Gloria Hallelujah';
+  src: url('./fonts/GloriaHallelujah-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Importation de la police Merriweather Sans */
+@font-face {
+  font-family: 'Merriweather Sans';
+  src: url('./fonts/MerriweatherSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Couleur fond d'écran */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Typographie du site */
-
-/* Importer la police Gloria Hallelujah */
-@font-face {
-    font-family: 'Gloria Hallelujah';
-    src: url('./fonts/GloriaHallelujah-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  /* Importer la police Merriweather Sans */
-  @font-face {
-    font-family: 'Merriweather Sans';
-    src: url('./fonts/MerriweatherSans-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-  }
-
-/* Couleur fond d'écran */
-
 body {
-    @apply bg-white;    
-  }
+  @apply  bg-slate-200;
+  font-family: 'Merriweather Sans', sans-serif;
+}
