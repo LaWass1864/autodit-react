@@ -59,3 +59,34 @@ body {
   text-underline-offset: 4px; /* Ajustez l'espacement ici */
 }
 
+.note-appreciation-container {
+  margin-left: 8rem; /* Alignement avec la marge */
+  margin-right: 2rem; /* Ajustement pour qu'il ne dépasse pas */
+  width: calc(100% - 6rem); /* Ajustement pour tenir compte des marges */
+  border-top: 3px solid var(--custom-red);
+  border-bottom: 3px solid var(--custom-red);
+  box-sizing: border-box;  
+  height: 130px;
+  position: relative;
+}
+
+.note-title-container {
+  width: 14rem; /* Largeur fixe pour la partie gauche */
+  display: flex;
+  align-items: center; /* Alignement vertical centré */
+  padding-left: 1rem; /* Espacement à gauche */
+}
+
+.vertical-line {
+  border-left: 3px solid var(--custom-red); /* Trait vertical */
+  height: 100%; /* Hauteur de l'encadré */
+  margin: 0 13rem; /* Espacement horizontal */
+  transform: translateY(-20px); /* Déplacement vers le haut */
+}
+
+.note-text-container {
+  flex-grow: 1; /* Utilisation du reste de l'espace disponible */
+  display: flex;
+  align-items: center; /* Alignement vertical centré */
+  padding-left: 1rem; /* Espacement à gauche */
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './Header';
+import Note from './Note';
 
 const Paper = () => {
   return (
@@ -37,6 +38,8 @@ const Paper = () => {
 
           {/* Header de la feuille */}
           <Header />
+          {/* Encadré avec la note et l'appréciation */}
+          <Note />
         </div>
       </div>
     </div>

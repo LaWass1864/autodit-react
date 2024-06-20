@@ -7,7 +7,7 @@ const Header = () => {
   const availability = "Disponible";
 
   const title = "Portfolio";
-  const subtitle = "Controle de connaissance";
+  const subtitle = "Contrôle de connaissance";
 
   // Fonction pour formater la date
   const formatDate = (date) => {
