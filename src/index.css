@@ -45,3 +45,16 @@ body {
   @apply bg-slate-200;
 
 }
+
+/* Classe pour texte de couleur personnalisée */
+.text-custom-blue {
+  color: var(--custom-blue);
+}
+
+/* Classe pour surlignage rouge */
+.underline-red {
+  text-decoration: underline;
+  text-decoration-color: var(--custom-red);
+  text-decoration-thickness: 2px; /* Ajustez l'épaisseur ici */
+  text-underline-offset: 4px; /* Ajustez l'espacement ici */
+}
