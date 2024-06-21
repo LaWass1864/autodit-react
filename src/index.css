@@ -12,6 +12,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Merriweather';
   src: url('./fonts/MerriweatherSans-Regular.ttf') format('truetype');
@@ -55,17 +56,23 @@ body {
 .underline-red {
   text-decoration: underline;
   text-decoration-color: var(--custom-red);
-  text-decoration-thickness: 2px; /* Ajustez l'épaisseur ici */
-  text-underline-offset: 4px; /* Ajustez l'espacement ici */
+  text-decoration-thickness: 2px;
+  /* Ajustez l'épaisseur ici */
+  text-underline-offset: 4px;
+  /* Ajustez l'espacement ici */
 }
 
+/* composant Note.js */
+
 .note-appreciation-container {
+  display: flex;
+  align-items: center;
   margin-left: 8rem; /* Alignement avec la marge */
   margin-right: 2rem; /* Ajustement pour qu'il ne dépasse pas */
   width: calc(100% - 6rem); /* Ajustement pour tenir compte des marges */
   border-top: 3px solid var(--custom-red);
   border-bottom: 3px solid var(--custom-red);
-  box-sizing: border-box;  
+  box-sizing: border-box;
   height: 130px;
   position: relative;
 }
@@ -73,15 +80,39 @@ body {
 .note-title-container {
   width: 14rem; /* Largeur fixe pour la partie gauche */
   display: flex;
-  align-items: center; /* Alignement vertical centré */
+  flex-direction: column; /* Affichage en colonne */
+  align-items: center; /* Alignement centré */
   padding-left: 1rem; /* Espacement à gauche */
+  position: relative;
+  border-left: 3px solid var(--custom-red);
+  border-right: 3px solid var(--custom-red);
+  overflow: hidden; /* Assurez-vous que rien ne dépasse */
+  justify-content: center;
+  height: 130px;
+}
+.note-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%; /* Utiliser toute la largeur disponible */
 }
 
-.vertical-line {
-  border-left: 3px solid var(--custom-red); /* Trait vertical */
-  height: 100%; /* Hauteur de l'encadré */
-  margin: 0 13rem; /* Espacement horizontal */
-  transform: translateY(-20px); /* Déplacement vers le haut */
+.note-value {
+  font-size: 3rem; /* Augmentez la taille de la police */
+  color: var(--custom-red);
+  position: absolute;
+  top: 0;
+  left: 30;
+  margin: 20px; /* Espacement par rapport au bord */
+}
+
+.max-note {
+  font-size: 3rem;
+  color: var(--custom-red);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 10px; /* Espacement par rapport au bord */
 }
 
 .note-text-container {
@@ -89,4 +120,5 @@ body {
   display: flex;
   align-items: center; /* Alignement vertical centré */
   padding-left: 1rem; /* Espacement à gauche */
+  color: var(--custom-red);
 }
