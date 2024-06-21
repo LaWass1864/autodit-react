@@ -22,7 +22,8 @@
 
 /* Classe pour Gloria Hallelujah */
 .font-gloria {
-  font-family: 'Gloria Hallelujah', cursive;
+   font-family: 'Gloria Hallelujah', cursive;
+
 }
 
 /* Classe pour Merriweather Sans */
@@ -67,9 +68,12 @@ body {
 .note-appreciation-container {
   display: flex;
   align-items: center;
-  margin-left: 8rem; /* Alignement avec la marge */
-  margin-right: 2rem; /* Ajustement pour qu'il ne dépasse pas */
-  width: calc(100% - 6rem); /* Ajustement pour tenir compte des marges */
+  margin-left: 8rem;
+  /* Alignement avec la marge */
+  margin-right: 2rem;
+  /* Ajustement pour qu'il ne dépasse pas */
+  width: calc(100% - 6rem);
+  /* Ajustement pour tenir compte des marges */
   border-top: 3px solid var(--custom-red);
   border-bottom: 3px solid var(--custom-red);
   box-sizing: border-box;
@@ -78,32 +82,41 @@ body {
 }
 
 .note-title-container {
-  width: 14rem; /* Largeur fixe pour la partie gauche */
+  width: 14rem;
+  /* Largeur fixe pour la partie gauche */
   display: flex;
-  flex-direction: column; /* Affichage en colonne */
-  align-items: center; /* Alignement centré */
-  padding-left: 1rem; /* Espacement à gauche */
+  flex-direction: column;
+  /* Affichage en colonne */
+  align-items: center;
+  /* Alignement centré */
+  padding-left: 1rem;
+  /* Espacement à gauche */
   position: relative;
   border-left: 3px solid var(--custom-red);
   border-right: 3px solid var(--custom-red);
-  overflow: hidden; /* Assurez-vous que rien ne dépasse */
+  overflow: hidden;
+  /* Assurez-vous que rien ne dépasse */
   justify-content: center;
   height: 130px;
 }
+
 .note-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%; /* Utiliser toute la largeur disponible */
+  width: 100%;
+  /* Utiliser toute la largeur disponible */
 }
 
 .note-value {
-  font-size: 3rem; /* Augmentez la taille de la police */
+  font-size: 3rem;
+  /* Augmentez la taille de la police */
   color: var(--custom-red);
   position: absolute;
   top: 0;
   left: 30;
-  margin: 20px; /* Espacement par rapport au bord */
+  margin: 20px;
+  /* Espacement par rapport au bord */
 }
 
 .max-note {
@@ -112,13 +125,52 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
-  margin: 10px; /* Espacement par rapport au bord */
+  margin: 10px;
+  /* Espacement par rapport au bord */
 }
 
 .note-text-container {
-  flex-grow: 1; /* Utilisation du reste de l'espace disponible */
+  flex-grow: 1;
+  /* Utilisation du reste de l'espace disponible */
   display: flex;
-  align-items: center; /* Alignement vertical centré */
-  padding-left: 1rem; /* Espacement à gauche */
+  align-items: center;
+  /* Alignement vertical centré */
+  padding-left: 1rem;
+  /* Espacement à gauche */
   color: var(--custom-red);
+}
+
+/* Style de la section  */
+
+.section {
+  margin-left: 9rem;
+  /* Alignement avec la marge */
+  margin-right: 2rem;
+  /* Ajustement pour qu'il ne dépasse pas */
+  width: calc(100% - 6rem);
+  /* Ajustement pour tenir compte des marges */
+  box-sizing: border-box;
+  height: 130px;
+  position: relative;
+  
+}
+
+.question {
+  margin-top: 42px;
+  margin-left: 0.5rem;
+}
+
+.reponse {
+  white-space: pre-wrap; /* Permet de gérer les retours à la ligne */
+  overflow-wrap: break-word; /* Permet de casser les mots trop longs */
+  overflow: hidden; /* Masque le débordement de texte */
+  line-height: 2.3rem; /* Ajouter de l'espace entre les lignes */
+  width: calc(100% - 2rem);
+}
+
+.highlight {
+  background-color:  var(--custom-icterine);
+}
+.strike {
+  text-decoration: line-through;
 }

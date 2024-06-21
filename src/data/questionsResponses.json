@@ -1,0 +1,10 @@
+[
+  {
+    "question": "Exercice 1 : Présentez-vous en quelques lignes",
+    "reponse": "Bonjour, je m'appelle Wassila. J'ai étudié la <span class='highlight'>sociologie</span> dans l'optique de travailler dans l'humanitaire ou dans les institutions internationales. Ensuite, j'ai travaillé en tant que chargé de clientéles dans une entreprise d'assurance. J'ai fait de la prévoyane individuelle, de la gestion de base de données, de la déshérence, de la retraite collective. Suite à la fin de mon contrat, j'ai décidé de me reconvertir dans le <span class='highlight'>développement web</span>. Je suis intéressée par le <span class='highlight'>front-end</span> et aussi l'<span class='highlight'>UX design</span>. J'ai travaillé en tant que développeuse <span class='strike'>frontd</span> <span class='highlight'>front-end</span>, mais je suis autodidacte en React. J'ai récemment fait l'Apple foundation program qui m'a initié à l'<span class='highlight'>UX design</span>. Cet univers étant proche de la <span class='highlight'>sociologie</span>, j'aspire à être <span class='strike'>ux desiner</span> <span class='highlight'>UX designer</span> avec une appétence pour le <span class='highlight'>front-end</span>."
+  },
+  {
+    "question": "Exercice 2 : Qu'aimez-vous faire dans la vie ?",
+    "reponse": "J'aime <span class='highlight'>coder</span>, <span class='highlight'>dessiner</span> et <span class='highlight'>lire</span> des livres sur <span class='highlight'>le développement personnel</span>."
+  }
+]
