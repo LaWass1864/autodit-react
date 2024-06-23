@@ -1,0 +1,37 @@
+[
+  {
+    "nom": "Cooking App",
+    "description": "La Cooking App est une application web Html/CSS/ReactJs intégrant une API de recettes. Avec une barre de recherche intuitive, elle permet aux utilisateurs d'explorer une variété de recettes, offrant ainsi une expérience culinaire interactive et personnalisée.",
+    "image": "/image/cookingApp.png",
+    "github": "https://github.com/LaWass1864/Cook-app",
+    "site web": "https://cosmic-cook.netlify.app/"
+  },
+  {
+    "nom": "Coffee App",
+    "description": "Un site web dynamique mettant en valeur des photos de montagnes. Conçu avec Html, SCSS et les puissants modèles de mise en page Flexbox et Grid, cette plateforme offre une expérience immersive pour les passionnés d'aventure.",
+    "image": "/image/coffee.png",
+    "github": "https://github.com/LaWass1864/Coffee",
+    "site web": "https://kaleidoscopic-halva-12485a.netlify.app"
+  },
+  {
+    "nom": "Mon Portfolio",
+    "description": "Une vitrine interactive de mes réalisations. Conçu avec Javascript et ReactJs, mon portfolio est enrichi de librairies telles que Framer Motion pour des animations fluides et React Slick pour une navigation intuitive. Inspiré par une maquette élaborée sur Figma, ce portfolio offre une expérience utilisateur immersive, mettant en valeur mes compétences et projets de manière dynamique.",
+    "image": "/image/monportfolio.png",
+    "github": "",
+    "site web": ""
+  },
+  {
+    "nom": "WeatherApp",
+    "description": "Une application simple et efficace alimentée par l'API OpenWeatherMap. Développée avec Javascript, React, Sass, et une API météo, Weather App affiche les prévisions météorologiques de votre ville, incluant la température actuelle. De plus, une fonctionnalité de barre de progression représente visuellement le cycle jour-nuit en fonction des heures de lever et de coucher du soleil.",
+    "image": "/image/weatherapp.png",
+    "github": "https://github.com/LaWass1864/weather-app",
+    "site web": "https://appweatherbywass.netlify.app/"
+  },
+  {
+    "nom": "HumanKind",
+    "description": "Une application simple et efficace alimentée par l'API OpenWeatherMap. Développée avec Javascript, React, Sass, et une API météo, Weather App affiche les prévisions météorologiques de votre ville, incluant la température actuelle. De plus, une fonctionnalité de barre de progression représente visuellement le cycle jour-nuit en fonction des heures de lever et de coucher du soleil.",
+    "image": "/image/weatherapp.png",
+    "github": "",
+    "site web": "https://fabulous-croissant-0ee07e.netlify.app/"
+  }
+]

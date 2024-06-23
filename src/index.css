@@ -45,7 +45,7 @@
 /* Typographie du site */
 body {
   @apply bg-slate-200;
-
+  
 }
 
 /* Classe pour texte de couleur personnalisée */
@@ -152,11 +152,10 @@ body {
   box-sizing: border-box;
   height: 130px;
   position: relative;
-  
-}
+  }
 
 .question {
-  margin-top: 42px;
+  margin-top: 38px;
   margin-left: 0.5rem;
 }
 
@@ -169,8 +168,95 @@ body {
 }
 
 .highlight {
-  background-color:  var(--custom-icterine);
+  background-color: var(--icterine); /* Surlignage jaune pâle et transparent */
+
+  border-radius: 2px;
 }
+
 .strike {
   text-decoration: line-through;
+  text-decoration-thickness: 2px;
 }
+
+/* Section projet */
+.projets {
+  margin-top: 20px;
+}
+
+.projet {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.projet-nom {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem; /* Ajoute un espacement entre le nom et la description */
+}
+
+.projet-description {
+  font-size: 1rem;
+}
+
+.projet-image {
+  width: 150px; /* Ajustez cette valeur selon vos besoins */
+  height: auto;
+  margin-right: 20px; /* Espacement entre l'image et la description */
+}
+
+.projet-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centrage vertical des éléments */
+}
+
+.app-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Deux colonnes pour les deux feuilles */
+  gap: 2rem; /* Espacement entre les colonnes */
+}
+
+/* App container to hold the papers */
+.paper-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+/* Each paper page */
+.paper-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+.visible {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.arrow.right {
+  right: 1rem;
+}
+
+.arrow.left {
+  left: 1rem;
+}
+

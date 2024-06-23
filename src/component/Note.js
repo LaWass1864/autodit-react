@@ -1,3 +1,4 @@
+// Note.js
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
@@ -26,13 +27,13 @@ const Note = () => {
     <form ref={form} onSubmit={sendEmail} className="note-appreciation-container">
       <div className="note-title-container">
         <div className="note-content">
-          <label htmlFor="note" className="note-label"></label>
+          <label htmlFor="note" className="note-label">Note:</label>
           <input type="number" id="note" name="note" className="note-value font-gloria bg-transparent" required min="0" max="20" />
           <span className="max-note font-gloria">/20</span>
         </div>
       </div>
       <div className="note-text-container">
-        <label htmlFor="appreciation" className="appreciation-label"> </label>
+        <label htmlFor="appreciation" className="appreciation-label">Appreciation:</label>
         <textarea id="appreciation" name="appreciation" className="note-text font-gloria bg-transparent" required></textarea>
       </div>
       <div className="user-info-container">
