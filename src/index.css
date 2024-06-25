@@ -373,6 +373,19 @@ label {
   align-self: center; 
 }
 
+.submit-button-note {
+  padding: 0.2rem;
+  background-color: var(--screamin-green);
+  border: 2px solid var(--screamin-green);
+  border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Gloria Hallelujah', cursive;
+  width: 10%; /* Diminue la largeur du bouton de soumission */
+  align-self: center; 
+  margin-right: 10px;
+}
+
 .submit-button:hover {
   background-color: var(--screamin-green);
 }

@@ -37,7 +37,7 @@ const Note = () => {
         <textarea id="appreciation" name="appreciation" className="note-text font-gloria bg-transparent" required></textarea>
       </div>
     
-      <button type="submit" className="submit-button rounded-lg font-merriweather px-4" style={{ 
+      <button type="submit" className="submit-button-note rounded-lg font-merriweather" style={{ 
         backgroundColor: 'var(--screamin-green)'
       }}>Notez</button>
     </form>
