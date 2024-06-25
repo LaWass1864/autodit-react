@@ -2,6 +2,7 @@ import React from 'react';
 import questions from '../data/questionsResponses.json';
 import QuestionReponse from './QuestionReponse';
 import Projets from './Projets';
+import Exercice4 from './Exercice4';
 
 const Section = ({ start, end }) => {
   return (
@@ -13,6 +14,8 @@ const Section = ({ start, end }) => {
             reponse={item.reponse}
           />
           {item.question.includes("Exercice 3") && <Projets />}
+          {item.question.includes("Exercice 4") && <Exercice4 />}
+          
         </div>
       ))}
     </div>

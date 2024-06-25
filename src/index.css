@@ -22,7 +22,7 @@
 
 /* Classe pour Gloria Hallelujah */
 .font-gloria {
-   font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'Gloria Hallelujah', cursive;
 
 }
 
@@ -45,7 +45,7 @@
 /* Typographie du site */
 body {
   @apply bg-slate-200;
-  
+
 }
 
 /* Classe pour texte de couleur personnalisée */
@@ -152,7 +152,7 @@ body {
   box-sizing: border-box;
   height: 130px;
   position: relative;
-  }
+}
 
 .question {
   margin-top: 38px;
@@ -160,17 +160,26 @@ body {
 }
 
 .reponse {
-  white-space: pre-wrap; /* Permet de gérer les retours à la ligne */
-  overflow-wrap: break-word; /* Permet de casser les mots trop longs */
-  overflow: hidden; /* Masque le débordement de texte */
-  line-height: 2.3rem; /* Ajouter de l'espace entre les lignes */
+  white-space: pre-wrap;
+  /* Permet de gérer les retours à la ligne */
+  overflow-wrap: break-word;
+  /* Permet de casser les mots trop longs */
+  overflow: hidden;
+  /* Masque le débordement de texte */
+  line-height: 2.3rem;
+  /* Ajouter de l'espace entre les lignes */
   width: calc(100% - 2rem);
+  color: var(--custom-blue);
 }
 
 .highlight {
-  background-color: var(--icterine); /* Surlignage jaune pâle et transparent */
-
+  background-color: var(--icterine);
+  /* Surlignage jaune pâle et transparent */
   border-radius: 2px;
+}
+
+.highlightgreen {
+  background-color: var(--screamin-green);
 }
 
 .strike {
@@ -180,7 +189,7 @@ body {
 
 /* Section projet */
 .projets {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .projet {
@@ -192,29 +201,57 @@ body {
 .projet-nom {
   font-size: 1.2rem;
   font-weight: bold;
-  margin-bottom: 0.5rem; /* Ajoute un espacement entre le nom et la description */
+  margin-bottom: 0.5rem;
+  /* Ajoute un espacement entre le nom et la description */
+  position: relative;
+  /* Nécessaire pour le positionnement de l'élément ::after */
+  display: inline-block;
+  /* Nécessaire pour que le pseudo-élément prenne toute la largeur du texte */
+  text-decoration: underline;
+  text-decoration-color: var(--rose-pink);
+  text-decoration-thickness: 0.2em;
+  /* Ajustez l'épaisseur de la ligne */
+  text-underline-offset: 0.2em;
 }
 
 .projet-description {
-  font-size: 1rem;
+  white-space: pre-wrap;
+  /* Permet de gérer les retours à la ligne */
+  overflow-wrap: break-word;
+  /* Permet de casser les mots trop longs */
+  overflow: hidden;
+  /* Masque le débordement de texte */
+  line-height: 2rem;
+  /* Ajouter de l'espace entre les lignes */
+  width: calc(100% - 2rem);
+  color: var(--custom-blue);
 }
 
 .projet-image {
-  width: 150px; /* Ajustez cette valeur selon vos besoins */
-  height: auto;
-  margin-right: 20px; /* Espacement entre l'image et la description */
+  width: 150px;
+  /* Ajustez cette valeur selon vos besoins */
+  height: 100px;
+  /* Ajustez cette valeur selon vos besoins */
+  object-fit: cover;
+  /* Pour que l'image s'ajuste dans le cadre sans être déformée */
+  margin-right: 10px;
+  /* Espacement entre l'image et la description */
+  border-radius: 12px;
 }
 
 .projet-info {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Centrage vertical des éléments */
+  justify-content: center;
+  /* Centrage vertical des éléments */
 }
 
 .app-container {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Deux colonnes pour les deux feuilles */
-  gap: 2rem; /* Espacement entre les colonnes */
+  grid-template-columns: 1fr 1fr;
+  /* Deux colonnes pour les deux feuilles */
+  gap: 2rem;
+  /* Espacement entre les colonnes */
 }
 
 /* App container to hold the papers */
@@ -224,7 +261,8 @@ body {
   height: 100vh;
   overflow-x: hidden;
 }
-/* Each paper page */
+
+/* feuille par page */
 .paper-page {
   display: flex;
   justify-content: center;
@@ -260,3 +298,103 @@ body {
   left: 1rem;
 }
 
+/* Style de la page de l'exercice 4 */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Gloria Hallelujah', cursive;
+  color: var(--custom-blue);
+}
+
+.form-group {
+  margin-bottom: 1.5rem; /* Ajoute plus d'espace entre les groupes de formulaires */
+}
+
+label {
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.user-name-input,
+.email-input {
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 1rem;
+  border: 2px solid black;
+  border-radius: 8px;
+  outline: none;
+  width: 50%; /* Réduit la largeur des inputs */
+  
+}
+
+.message-input {
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: 2px solid black;
+  border-radius: 8px;
+  outline: none;  
+  height: 150px; /* Augmente la hauteur du textarea */
+ }
+
+.sketchy {
+  display: inline-block;
+  border: 3px solid var(--custom-blue);
+  font-size: 2.5rem;
+  border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
+  text-transform: uppercase;
+  letter-spacing: 0.3ch;
+
+  position: relative;
+}
+
+.sketchy::before {
+  content: '';
+  border: 2px solid #353535;
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
+  border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
+}
+
+.submit-button {
+  padding: 1rem;
+  background-color: var(--screamin-green);
+  border: 2px solid var(--screamin-green);
+  border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Gloria Hallelujah', cursive;
+  width: 30%; /* Diminue la largeur du bouton de soumission */
+  align-self: center; 
+}
+
+.submit-button:hover {
+  background-color: var(--screamin-green);
+}
+
+/* Style de l'arrow du carousel  */
+
+.custom-next-arrow {
+  background: red;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-prev-arrow {
+  background: blue;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

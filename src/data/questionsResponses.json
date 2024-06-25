@@ -11,5 +11,9 @@
   {
     "question": "Exercice 3 : Montrez-nous vos réalisations",
     "reponse": "Voici quelques projets sur lesquels j'ai travaillé..."
+  },
+  {
+    "question": "Exercice 4 : Comment pouvons-nous vous contacter ?",
+    "reponse": "Merci de remplir le formulaire ci-dessous avec votre <span class='highlight'>nom</span>, votre <span class='highlight'>email</span> et votre <span class='highlight'>message</span> pour me contacter."
   }
 ]

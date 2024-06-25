@@ -9,7 +9,8 @@ const Projets = () => {
           <img src={projet.image} alt={projet.nom} className="projet-image mr-4" />
           <div className="projet-info">
             <h3 className="projet-nom font-gloria mb-2">{projet.nom}</h3>
-            <p className="projet-description font-gloria">{projet.description}</p>
+            <p className="projet-description font-gloria text-custom-blue" dangerouslySetInnerHTML={{ __html: projet.description }}></p>
+            <p><a href={projet.github}>GitHub</a> | <a href={projet.site_web}>Site Web</a></p>
           </div>
         </div>
       ))}

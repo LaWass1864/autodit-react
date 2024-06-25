@@ -1,37 +1,37 @@
 [
   {
     "nom": "Cooking App",
-    "description": "La Cooking App est une application web Html/CSS/ReactJs intégrant une API de recettes. Avec une barre de recherche intuitive, elle permet aux utilisateurs d'explorer une variété de recettes, offrant ainsi une expérience culinaire interactive et personnalisée.",
+    "description": "La Cooking App est une application web utilisant <span class='highlightgreen'>HTML/CSS/ReactJs</span> et intégrant une API de recettes. Avec une barre de recherche intuitive, elle permet aux utilisateurs d'explorer une variété de recettes, offrant ainsi une expérience culinaire interactive et personnalisée.",
     "image": "/image/cookingApp.png",
     "github": "https://github.com/LaWass1864/Cook-app",
-    "site web": "https://cosmic-cook.netlify.app/"
+    "site_web": "https://cosmic-cook.netlify.app/"
   },
   {
     "nom": "Coffee App",
-    "description": "Un site web dynamique mettant en valeur des photos de montagnes. Conçu avec Html, SCSS et les puissants modèles de mise en page Flexbox et Grid, cette plateforme offre une expérience immersive pour les passionnés d'aventure.",
+    "description": "Coffee est une application web responsive reproduisant fidèlement une maquette en <span class='highlightgreen'>HTML/SCSS</span>. Elle respecte les tailles des éléments, s'adapte parfaitement à toutes les tailles d'écran, et dispose d'un menu avec un fond en dégradé qui change de couleur pour améliorer l'expérience utilisateur.",
     "image": "/image/coffee.png",
     "github": "https://github.com/LaWass1864/Coffee",
-    "site web": "https://kaleidoscopic-halva-12485a.netlify.app"
+    "site_web": "https://kaleidoscopic-halva-12485a.netlify.app"
   },
   {
     "nom": "Mon Portfolio",
-    "description": "Une vitrine interactive de mes réalisations. Conçu avec Javascript et ReactJs, mon portfolio est enrichi de librairies telles que Framer Motion pour des animations fluides et React Slick pour une navigation intuitive. Inspiré par une maquette élaborée sur Figma, ce portfolio offre une expérience utilisateur immersive, mettant en valeur mes compétences et projets de manière dynamique.",
-    "image": "/image/monportfolio.png",
+    "description": "Explorez mon portfolio interactif, conçu avec <span class='highlightgreen'>ReactJs</span> et <span class='highlightgreen'>Javascript</span>. Maquetté sur Figma, il intègre Framer Motion pour des animations fluides et Slick Carousel pour une navigation intuitive. Un formulaire EmailJs et le style Tailwind enrichissent cette vitrine dynamique de mes compétences et projets.",
+    "image": "/image/portfolioapp.png",
     "github": "",
-    "site web": ""
+    "site_web": "https://autodit-react.netlify.app/"
   },
   {
     "nom": "WeatherApp",
-    "description": "Une application simple et efficace alimentée par l'API OpenWeatherMap. Développée avec Javascript, React, Sass, et une API météo, Weather App affiche les prévisions météorologiques de votre ville, incluant la température actuelle. De plus, une fonctionnalité de barre de progression représente visuellement le cycle jour-nuit en fonction des heures de lever et de coucher du soleil.",
+    "description": "Une application simple et efficace alimentée par l'API OpenWeatherMap. Développée avec <span class='highlightgreen'>Javascript / React / Sass / API météo</span>, Weather App affiche les prévisions météorologiques et la température actuelle de votre ville, avec une barre de progression représentant le cycle jour-nuit.",
     "image": "/image/weatherapp.png",
     "github": "https://github.com/LaWass1864/weather-app",
-    "site web": "https://appweatherbywass.netlify.app/"
+    "site_web": "https://appweatherbywass.netlify.app/"
   },
   {
     "nom": "HumanKind",
-    "description": "Une application simple et efficace alimentée par l'API OpenWeatherMap. Développée avec Javascript, React, Sass, et une API météo, Weather App affiche les prévisions météorologiques de votre ville, incluant la température actuelle. De plus, une fonctionnalité de barre de progression représente visuellement le cycle jour-nuit en fonction des heures de lever et de coucher du soleil.",
-    "image": "/image/weatherapp.png",
-    "github": "",
-    "site web": "https://fabulous-croissant-0ee07e.netlify.app/"
+    "description": "HumanKind est une réplique en <span class='highlightgreen'>Html / Sass</span> avec animation et parallaxe au défilement. Ce projet met en avant des techniques modernes pour une expérience utilisateur immersive.",
+    "image": "/image/humankind.png",
+    "github": "https://github.com/LaWass1864/autodit-react",
+    "site_web": "https://fabulous-croissant-0ee07e.netlify.app/"
   }
 ]

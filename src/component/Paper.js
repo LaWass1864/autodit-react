@@ -13,6 +13,8 @@ const Paper = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
+    nextArrow: <nextArrow />,
+    prevArrow: <prevArrow />,
   };
 
   return (
@@ -25,6 +27,9 @@ const Paper = () => {
         </Page>
         <Page>
           <Section start={2} end={2} />
+        </Page>
+        <Page>
+          <Section start={3} end={3} />
         </Page>
       </Slider>
     </div>
