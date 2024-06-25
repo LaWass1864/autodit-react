@@ -411,3 +411,19 @@ label {
   justify-content: center;
   align-items: center;
 }
+
+
+/* style du numero de page */
+
+.custom-page-number{
+  font-family: 'Gloria Hallelujah';
+  font-size: 32px;
+  font-weight: 500;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  background-color: transparent;
+  border: 2px solid var(--custom-red);
+  display: flex;
+  justify-content: center;
+}

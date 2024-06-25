@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Page = ({ children }) => {
+const Page = ({ children, pageNumber, pageNumberStyle, pageNumberClass }) => {
   return (
     <div className="bg-white shadow-md rounded-xl p-4 sm:p-8 relative"
       style={{
@@ -31,6 +31,14 @@ const Page = ({ children }) => {
       <div className="absolute left-6 top-[96%] transform -translate-y-1/2 bg-gray-300 rounded-full w-4 h-4 sm:w-5 sm:h-5"></div>
 
       {children}
+
+      {/* Numéro de page */}
+      <div
+        className={`absolute bottom-4 right-4 ${pageNumberClass}`}
+        style={pageNumberStyle}
+      >
+         {pageNumber}
+      </div>
     </div>
   );
 }

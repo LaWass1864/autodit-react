@@ -13,22 +13,29 @@ const Paper = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
-    nextArrow: <nextArrow />,
-    prevArrow: <prevArrow />,
+   
   };
+
+  const pageNumberStyle = {
+    fontSize: '16px',
+    color: 'var(--custom-red)',
+    fontWeight: 'bold',
+  };
+
+  const pageNumberClass = 'custom-page-number';
 
   return (
     <div className="w-full max-w-4xl mx-auto">
       <Slider {...settings}>
-        <Page>
+        <Page pageNumber={1} pageNumberStyle={pageNumberStyle} pageNumberClass={pageNumberClass}>
           <Header />
           <Note />
           <Section start={0} end={1} />
         </Page>
-        <Page>
+        <Page pageNumber={2} pageNumberStyle={pageNumberStyle} pageNumberClass={pageNumberClass}>
           <Section start={2} end={2} />
         </Page>
-        <Page>
+        <Page pageNumber={3} pageNumberStyle={pageNumberStyle} pageNumberClass={pageNumberClass}>
           <Section start={3} end={3} />
         </Page>
       </Slider>
