@@ -570,56 +570,14 @@ button:hover {
 
 @media (max-width: 768px) {
   .paper-container {
-    max-width: 100%;
-    padding: 10px;
-    transform: scale(1.2); /* Agrandir la feuille */
+  background-color: red;
   }
 
-  .slick-slide {
-    padding: 10px;
-  }
-
-  .header {
-    font-size: 1.5rem;
-  }
-
-  .animated-text {
-    font-size: 6vw; /* Agrandir la typo */
-  }
-
-  p {
-    font-size: 4vw; /* Agrandir la typo */
-  }
-
-  button {
-    font-size: 4vw; /* Agrandir la typo */
-  }
 }
 
 @media (max-width: 480px) {
   .paper-container {
-    max-width: 100%;
-    padding: 5px;
-    transform: scale(1.5); /* Agrandir la feuille encore plus */
+    background-color: green;
   }
 
-  .slick-slide {
-    padding: 5px;
-  }
-
-  .header {
-    font-size: 2rem;
-  }
-
-  .animated-text {
-    font-size: 8vw; /* Agrandir la typo encore plus */
-  }
-
-  p {
-    font-size: 5vw; /* Agrandir la typo encore plus */
-  }
-
-  button {
-    font-size: 5vw; /* Agrandir la typo encore plus */
-  }
 }
