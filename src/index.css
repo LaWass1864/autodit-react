@@ -566,3 +566,56 @@ button:hover {
     font-size: 4.5vw;
   }
 }
+
+/* responsive de paper */
+
+/* src/components/Paper.css */
+
+.paper-container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+  .paper-container {
+    max-width: 900px;
+    padding: 15px;
+  }
+
+  .slick-slide {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .paper-container {
+    max-width: 600px;
+    padding: 10px;
+  }
+
+  .slick-slide {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .paper-container {
+    max-width: 100%;
+    padding: 5px;
+  }
+
+  .slick-slide {
+    padding: 5px;
+  }
+}
