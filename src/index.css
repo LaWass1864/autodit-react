@@ -487,7 +487,6 @@ label {
 }
 
 /* Page d'unboarding */
-/* src/components/PresentationPage.css */
 
 .presentation-page {
   display: flex;
@@ -495,14 +494,13 @@ label {
   align-items: center;
   height: 100vh;
   width: 100vw;
-  background-color: #ffb703;
+  background-color: #282c34;
   color: white;
   text-align: center;
   padding: 20px;
   position: absolute;
   top: 0;
   left: 0;
-  font-family: 'Merriweather', sans-serif;
 }
 
 .presentation-content {
@@ -512,24 +510,56 @@ label {
 .animated-text {
   white-space: nowrap;
   overflow: hidden;
-  border-right: 0.15em solid orange;
-  /* Couleur du curseur */
-  font-family: 'Merriweather', sans-serif;
+  border-right: 0.15em solid orange; /* Couleur du curseur */
+  font-family: 'Courier New', Courier, monospace; /* Police */
+  font-size: 3vw; /* Taille de la police réactive */
 }
 
-button {
+.button-text {
   margin-top: 20px;
   padding: 10px 20px;
   background-color: #61dafb;
   border: none;
-  color: #fff;
-  font-size: 16px;
+  color: black;
+  font-size: 3vw; /* Taille de la police réactive */
   cursor: pointer;
   transition: transform 0.3s ease, background-color 0.3s ease;
-  border-radius: 12px;
 }
 
 button:hover {
   background-color: #21a1f1;
   transform: scale(1.05);
+}
+
+.presentation-text{
+  font-size: 2.5vw; /* Taille de la police réactive */
+}
+
+/* Media queries pour ajuster la taille de la police sur différents écrans */
+@media (max-width: 768px) {
+  .animated-text {
+    font-size: 8vw;
+  }
+
+  button {
+    font-size: 4vw;
+  }
+
+  p {
+    font-size: 3.5vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .animated-text {
+    font-size: 10vw;
+  }
+
+  button {
+    font-size: 5vw;
+  }
+
+  p {
+    font-size: 4.5vw;
+  }
 }

@@ -23,10 +23,10 @@ const PresentationPage = ({ onContinue }) => {
     <div className="presentation-page">
       <div className="presentation-content">
         <h1 className="animated-text">{displayedText}</h1>
-        <p>
+        <p className="presentation-text">
           Mon portfolio est en perpétuelle évolution. Je travaille dur pour ajouter des couleurs éclatantes 🎨, rendre le site super responsive 📱, peaufiner les détails 🛠️, et créer une page de présentation géniale ✨.
         </p>
-        <button onClick={onContinue}>Entrer</button>
+        <button className="button-text" onClick={onContinue}>Entrer</button>
       </div>
     </div>
   );
