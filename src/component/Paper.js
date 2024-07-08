@@ -5,7 +5,6 @@ import Note from './Note';
 import Section from './Section';
 import Page from './Page';
 
-
 const Paper = () => {
   const settings = {
     dots: true,
@@ -14,6 +13,7 @@ const Paper = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
+   
   };
 
   const pageNumberStyle = {
@@ -25,7 +25,7 @@ const Paper = () => {
   const pageNumberClass = 'custom-page-number';
 
   return (
-    <div className="paper-container">
+    <div className="w-full max-w-4xl mx-auto">
       <Slider {...settings}>
         <Page pageNumber={1} pageNumberStyle={pageNumberStyle} pageNumberClass={pageNumberClass}>
           <Header />
