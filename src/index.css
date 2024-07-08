@@ -505,25 +505,28 @@ label {
 
 .presentation-content {
   max-width: 600px;
+  font-family: 'Merriweather';
 }
 
 .animated-text {
   white-space: nowrap;
   overflow: hidden;
-  border-right: 0.15em solid orange; /* Couleur du curseur */
-  font-family: 'Courier New', Courier, monospace; /* Police */
+  border-right: 0.15em solid var(--rose-pink); /* Couleur du curseur */
+  font-family: 'Merriweather';
   font-size: 3vw; /* Taille de la police réactive */
 }
 
 .button-text {
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: #61dafb;
+  background-color: var(--neon-blue);
   border: none;
-  color: black;
-  font-size: 3vw; /* Taille de la police réactive */
+  color: #fff;
+  font-size: 3vw; 
   cursor: pointer;
   transition: transform 0.3s ease, background-color 0.3s ease;
+  font-family: 'Gloria Hallelujah';
+  border-radius: 12px;
 }
 
 button:hover {
