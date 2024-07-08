@@ -12,11 +12,13 @@ const App = () => {
   };
 
   return (
-    <div className="App min-h-screen flex items-center justify-center bg-gray-200 mt-12">
+    <div className="App">
       {showPresentation ? (
         <PresentationPage onContinue={handleContinue} />
       ) : (
-        <Paper />
+        <div className="min-h-screen flex items-center justify-center bg-gray-200 mt-12">
+          <Paper />
+        </div>
       )}
     </div>
   );
