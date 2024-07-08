@@ -18,7 +18,7 @@ const Header = () => {
   const today = formatDate(new Date());
 
   return (
-    <header className="flex justify-between items-start p-4 rounded-t-xl w-full max-w-4xl">
+    <header className="flex justify-between items-start p-3 rounded-t-xl w-full max-w-4xl">
       <div className="flex flex-col items-start space-y-1">
         <h1 className="text-lg font-gloria text-custom-blue underline-red">{name}</h1>
         <p className="text-base font-gloria text-custom-blue underline-red whitespace-pre-wrap">{job}</p>

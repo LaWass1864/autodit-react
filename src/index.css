@@ -58,9 +58,8 @@ body {
   text-decoration: underline;
   text-decoration-color: var(--custom-red);
   text-decoration-thickness: 2px;
-  /* Ajustez l'épaisseur ici */
   text-underline-offset: 4px;
-  /* Ajustez l'espacement ici */
+
 }
 
 /* composant Note.js */
@@ -69,10 +68,8 @@ body {
   display: flex;
   align-items: center;
   margin-left: 8rem;
-  /* Alignement avec la marge */
   margin-right: 2rem;
-  /* Ajustement pour qu'il ne dépasse pas */
-  width: calc(100% - 6rem);
+   width: calc(100% - 6rem);
   /* Ajustement pour tenir compte des marges */
   border-top: 3px solid var(--custom-red);
   border-bottom: 3px solid var(--custom-red);
@@ -116,7 +113,7 @@ body {
   top: 0;
   left: 30;
   margin: 20px;
-  /* Espacement par rapport au bord */
+
 }
 
 .max-note {
@@ -157,6 +154,7 @@ body {
 .question {
   margin-top: 38px;
   margin-left: 0.5rem;
+  font-weight: 800;
 }
 
 .reponse {
