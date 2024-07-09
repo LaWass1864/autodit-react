@@ -2,9 +2,9 @@ import React from 'react';
 
 const Page = ({ children, pageNumber, pageNumberStyle, pageNumberClass }) => {
   return (
-    <div className="bg-white shadow-md rounded-xl p-4 sm:p-8 relative"
+    <div className ="shadow-md rounded-xl p-4 sm:p-8 relative"
       style={{
-        width: '790px',
+        width: '',
         minHeight: '1080px',
         backgroundImage: 'url("/css-pattern-by-magicpattern4.png")',
         backgroundSize: 'cover',
