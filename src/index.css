@@ -538,4 +538,15 @@ button:hover {
   font-size: 2.5vw; /* Taille de la police réactive */
 }
 
+/* Style pour la flèche précédente */
 
+.slick-prev:before {
+  color: var(--custom-red) !important;
+  font-size: 55px !important;
+
+
+}
+.slick-next:before {
+  color: var(--custom-blue)  !important;
+  font-size: 55px !important;
+}
