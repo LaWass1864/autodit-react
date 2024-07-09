@@ -21,7 +21,7 @@ const Projets = () => {
             <h3 className="projet-nom font-gloria mb-2">{projet.nom}</h3>
             <p className="projet-description font-gloria text-custom-blue" dangerouslySetInnerHTML={{ __html: projet.description }}></p>
             <p className="block projet-lien font-gloria text-custom-blue font-semibold">
-              <a href={projet.github}>GitHub</a> | <a href={projet.site_web}>Site Web</a>
+              <a href={projet.github} target="_blank" rel="noopener noreferrer">GitHub</a> | <a href={projet.site_web} target="_blank" rel="noopener noreferrer">Site Web</a>
             </p>
           </div>
         </div>
