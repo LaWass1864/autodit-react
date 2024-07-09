@@ -3,7 +3,7 @@ import React from 'react';
 const Header = () => {
   // Variables pour afficher les informations
   const name = "Wassila";
-  const job = "Développeuse\nfront-end";
+  const job = "Développeuse front-end || ux design";
   const availability = "Disponible";
 
   const title = "Portfolio";
@@ -21,10 +21,17 @@ const Header = () => {
     <header className="flex justify-between items-start p-3 rounded-t-xl w-full max-w-4xl">
       <div className="flex flex-col items-start space-y-1">
         <h1 className="text-lg font-gloria text-custom-blue underline-red">{name}</h1>
-        <p className="text-base font-gloria text-custom-blue underline-red whitespace-pre-wrap">{job}</p>
+        <p className="text-base font-gloria text-custom-blue underline-red whitespace-pre-wrap">
+          {job.split('||').map((part, index) => (
+            <React.Fragment key={index}>
+              {part.trim()}
+              {index < job.split('||').length - 1 && <br />}
+            </React.Fragment>
+          ))}
+        </p>
         <div className="flex items-center space-x-2">
-        <div className= "w-3 h-3 rounded-full " style={{ backgroundColor: 'var(--screamin-green)' }}></div>
-          <p className="text-lg font-gloria text-custom-blue" >{availability}</p>
+          <div className="w-3 h-3 rounded-full" style={{ backgroundColor: 'var(--screamin-green)' }}></div>
+          <p className="text-lg font-gloria text-custom-blue">{availability}</p>
         </div>
       </div>
       <div className="text-center self-start">
@@ -36,6 +43,6 @@ const Header = () => {
       </div>
     </header>
   );
-}
+};
 
 export default Header;
