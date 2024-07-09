@@ -4,12 +4,11 @@ const Page = ({ children, pageNumber, pageNumberStyle, pageNumberClass }) => {
   return (
     <div className="bg-white shadow-md rounded-xl p-4 sm:p-8 relative"
       style={{
-        width: '800px',
-        minHeight: '1300px',
+        width: '790px',
+        minHeight: '1080px',
         backgroundImage: 'url("/css-pattern-by-magicpattern4.png")',
         backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center',
+            
       }}
     >
       {/* Marge rouge */}

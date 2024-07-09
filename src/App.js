@@ -16,7 +16,7 @@ const App = () => {
       {showPresentation ? (
         <PresentationPage onContinue={handleContinue} />
       ) : (
-        <div className="min-h-screen flex items-center justify-center bg-gray-200 mt-12">
+        <div className="min-h-screen flex items-center justify-center mt-12">
           <Paper />
         </div>
       )}

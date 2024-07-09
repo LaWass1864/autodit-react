@@ -44,7 +44,7 @@
 
 /* Typographie du site */
 body {
-  @apply bg-slate-200;
+  background-image: url('/public/image/background-portfolio.webp');
 
 }
 
