@@ -234,13 +234,8 @@ body {
   padding: 0 0.25em;
 }
 
-.strike {
-  text-decoration: line-through;
-  text-decoration-thickness: 2px;
-}
-
-
 /* Section projet */
+
 .projets {
   margin-top: 10px;
 }
@@ -254,17 +249,7 @@ body {
 .projet-nom {
   font-size: 1.2rem;
   font-weight: bold;
-  margin-bottom: 0.5rem;
-  /* Ajoute un espacement entre le nom et la description */
-  position: relative;
-  /* Nécessaire pour le positionnement de l'élément ::after */
-  display: inline-block;
-  /* Nécessaire pour que le pseudo-élément prenne toute la largeur du texte */
-  text-decoration: underline;
-  text-decoration-color: var(--rose-pink);
-  text-decoration-thickness: 0.2em;
-  /* Ajustez l'épaisseur de la ligne */
-  text-underline-offset: 0.2em;
+ 
 }
 
 .projet-description {

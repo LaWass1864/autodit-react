@@ -9,7 +9,8 @@ const Projets = () => {
       const annotation = annotate(element, { type: 'bracket', color: 'var(--custom-red)', padding: [2, 10], brackets: ['left', 'right'], strokeWidth: 3 });
       annotation.show();
     });
-  }, []); 
+
+  }, []);
 
   return (
     <div className="projets">
