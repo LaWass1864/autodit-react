@@ -9,9 +9,10 @@ const Exercice4 = () => {
     e.preventDefault();
 
     emailjs.sendForm(
-      process.env.REACT_APP_EMAILJS_SERVICE_ID,
-      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-      form.current,   
+      'service_57t1xy2', 
+      'template_rspn9qe', 
+      form.current,
+      'oCpRBtFl9XwOD5fyi'  
     )
     .then((result) => {
       console.log(result.text);
