@@ -1,13 +1,12 @@
-const path = require('path-browserify');
-const os = require('os-browserify/browser');
-const crypto = require('crypto-browserify');
+const path = require('path');
 
 module.exports = {
   resolve: {
     fallback: {
-      path: path,
-      os: os,
-      crypto: crypto,
-    },
-  },
+      "path": require.resolve("path-browserify"),
+      "os": require.resolve("os-browserify/browser"),
+      "crypto": require.resolve("crypto-browserify"),
+      "fs": false
+    }
+  }
 };

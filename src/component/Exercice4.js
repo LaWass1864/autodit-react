@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
-// Charge les variables d'environnement
+// Charge les variables d'environnement pour les crypter
 require('dotenv').config();
 
 const Exercice4 = () => {
