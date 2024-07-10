@@ -1,6 +1,9 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
+// Charge les variables d'environnement
+require('dotenv').config();
+
 const Exercice4 = () => {
   const form = useRef();
 
@@ -8,10 +11,9 @@ const Exercice4 = () => {
     e.preventDefault();
 
     emailjs.sendForm(
-      'service_57t1xy2', // Remplacez par votre Service ID
-      'template_rspn9qe', // Remplacez par votre Template ID
-      form.current,
-      'oCpRBtFl9XwOD5fyi'  // Remplacez par votre Clé publique
+      process.env.REACT_APP_EMAILJS_SERVICE_ID,
+      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+      form.current,   
     )
     .then((result) => {
       console.log(result.text);
@@ -24,7 +26,6 @@ const Exercice4 = () => {
 
   return (
     <div>
-
       <form ref={form} onSubmit={sendEmail} className="contact-form">
         <div className="form-group">
           <label htmlFor="user_name">Nom :</label>

@@ -1,4 +1,3 @@
-// src/components/PresentationPage.js
 
 import React, { useEffect, useState } from 'react';
 
@@ -14,7 +13,7 @@ const PresentationPage = ({ onContinue }) => {
       if (index === fullText.length) {
         clearInterval(timer);
       }
-    }, 150); // Vitesse de l'animation
+    }, 150); // Vitesse de l'animation du texte
     return () => clearInterval(timer);
   }, [fullText]);
 
