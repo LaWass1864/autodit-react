@@ -4,6 +4,7 @@ import QuestionReponse from './QuestionReponse';
 import Projets from './Projets';
 import Exercice4 from './Exercice4';
 
+// composition de chaque page 
 const Section = ({ start, end }) => {
   return (
     <div className="section">

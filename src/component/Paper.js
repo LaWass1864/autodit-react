@@ -5,6 +5,7 @@ import Note from './Note';
 import Section from './Section';
 import Page from './Page';
 
+// composition des pages
 const Paper = () => {
   const settings = {
     dots: true,
@@ -15,7 +16,7 @@ const Paper = () => {
     arrows: true,
    
   };
-
+// pagination 
   const pageNumberStyle = {
     fontSize: '16px',
     color: 'var(--custom-red)',
@@ -27,14 +28,17 @@ const Paper = () => {
   return (
     <div className="w-full max-w-4xl mx-auto">
       <Slider {...settings}>
+        {/* page 1 */}
         <Page pageNumber={1} pageNumberStyle={pageNumberStyle} pageNumberClass={pageNumberClass}>
           <Header />
           <Note />
           <Section start={0} end={1} />
         </Page>
+        {/* page 2 */}
         <Page pageNumber={2} pageNumberStyle={pageNumberStyle} pageNumberClass={pageNumberClass}>
           <Section start={2} end={2} />
         </Page>
+        {/* page 3 */}
         <Page pageNumber={3} pageNumberStyle={pageNumberStyle} pageNumberClass={pageNumberClass}>
           <Section start={3} end={3} />
         </Page>

@@ -9,10 +9,10 @@ const Note = () => {
     e.preventDefault();
 
     emailjs.sendForm(
-      'service_57t1xy2', // Remplacez par votre Service ID
-      'template_rspn9qe', // Remplacez par votre Template ID
+      'service_57t1xy2', 
+      'template_rspn9qe', 
       form.current,
-      'oCpRBtFl9XwOD5fyi'  // Remplacez par votre Clé publique
+      'oCpRBtFl9XwOD5fyi'  
     )
     .then((result) => {
       console.log(result.text);

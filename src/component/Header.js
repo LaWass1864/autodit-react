@@ -9,7 +9,7 @@ const Header = () => {
   const title = "Portfolio";
   const subtitle = "Contrôle de connaissance";
 
-  // Fonction pour formater la date
+  // Fonction pour formater la date 
   const formatDate = (date) => {
     const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
     return new Intl.DateTimeFormat('fr-FR', options).format(date);
@@ -22,6 +22,7 @@ const Header = () => {
       <div className="flex flex-col items-start space-y-1">
         <h1 className="text-lg font-gloria text-custom-blue underline-red">{name}</h1>
         <p className="text-base font-gloria text-custom-blue underline-red whitespace-pre-wrap">
+          {/* decouper le job et le mettre sur deux lignes */}
           {job.split('||').map((part, index) => (
             <React.Fragment key={index}>
               {part.trim()}
