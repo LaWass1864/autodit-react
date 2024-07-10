@@ -8,14 +8,14 @@ const App = () => {
   const [showPresentation, setShowPresentation] = useState(true);
 
   useEffect(() => {
-    const hasVisited = localStorage.getItem('hasVisited');
-    if (hasVisited) {
+    const presentationShown = localStorage.getItem('presentationShown');
+    if (presentationShown) {
       setShowPresentation(false);
     }
   }, []);
 
   const handleContinue = () => {
-    localStorage.setItem('hasVisited', 'true');
+    localStorage.setItem('presentationShown', 'true');
     setShowPresentation(false);
   };
 
