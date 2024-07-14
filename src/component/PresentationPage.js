@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 
 const PresentationPage = ({ onContinue }) => {
   const [displayedText, setDisplayedText] = useState('');
-  const fullText = 'Auto Dit React 🚀';
+  const fullText = 'Auto Dit React 🎒';
 
   useEffect(() => {
     let index = 0;
