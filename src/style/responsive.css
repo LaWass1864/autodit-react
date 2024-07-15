@@ -1,0 +1,9 @@
+@media (max-width: 767px) {
+    .animated-text {
+        font-size: 9vw;      
+    }
+    .presentation-text {
+        font-size: 9.5vw;
+     
+      }
+  }

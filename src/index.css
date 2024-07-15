@@ -499,11 +499,9 @@ label {
 .animated-text {
   white-space: nowrap;
   overflow: hidden;
-  border-right: 0.15em solid var(--rose-pink);
-  /* Couleur du curseur */
+  border-right: 0.15em solid var(--rose-pink); 
   font-family: 'Merriweather';
-  font-size: 3vw;
-  /* Taille de la police réactive */
+  font-size: 3vw;  
 }
 
 .button-text {
