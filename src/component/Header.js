@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const Header = () => {
   // Variables pour afficher les informations
   const name = "Wassila";
@@ -18,11 +19,11 @@ const Header = () => {
   const today = formatDate(new Date());
 
   return (
-    <header className="flex justify-between items-start p-3 rounded-t-xl w-full max-w-4xl">
-      <div className="flex flex-col items-start space-y-1">
+    <header className="header">
+      <div className="header-left desktop-only">
         <h1 className="text-lg font-gloria text-custom-blue underline-red">{name}</h1>
         <p className="text-base font-gloria text-custom-blue underline-red whitespace-pre-wrap">
-          {/* decouper le job et le mettre sur deux lignes */}
+          {/* Découper le job et le mettre sur deux lignes */}
           {job.split('||').map((part, index) => (
             <React.Fragment key={index}>
               {part.trim()}
@@ -35,11 +36,15 @@ const Header = () => {
           <p className="text-lg font-gloria text-custom-blue">{availability}</p>
         </div>
       </div>
-      <div className="text-center self-start">
+      <div className="header-center desktop-only">
         <h2 className="text-2xl font-gloria text-custom-blue underline-red">{title}</h2>
-        <p className="text-lg font-gloria text-custom-blue">{subtitle}</p>
       </div>
-      <div className="text-right self-start">
+      <div className="header-right desktop-only">
+        <p className="text-lg font-gloria text-custom-blue underline-red">{today}</p>
+      </div>
+      {/* Ajout de contenu spécifique pour mobile */}
+      <div className="header-center mobile-only">
+        <p className="text-lg font-gloria text-custom-blue">{subtitle}</p>
         <p className="text-lg font-gloria text-custom-blue underline-red">{today}</p>
       </div>
     </header>

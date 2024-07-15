@@ -1,5 +1,36 @@
-/* responsive de la page de presentation */
+/* Responsive de la page de présentation */
 @media (max-width: 600px) {
+
+    body {
+        background-image: none;
+    }
+    
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #ffffff; /* Ajoutez une couleur de fond pour le header en mode mobile */
+      z-index: 1000; /* Assurez-vous que le header est au-dessus des autres éléments */
+      padding: 10px; /* Ajustez le padding si nécessaire */
+      border-radius: 0;
+    }
+  
+    .header-center,
+    .header-right {
+      text-align: left;
+    }
+  
+    .desktop-only {
+      display: none;
+    }
+  
+    .mobile-only {
+      display: block;
+    }
+
     .presentation-page {
       padding: 10px;
     }
@@ -11,13 +42,19 @@
   
     .presentation-text {
       font-size: 4.5vw;
-   
     }
   
     .button-text {
       font-size: 5vw;
       padding: 8px 16px;
     }
-  }
 
-  
+    /* Supprimer l'image de fond, la marge rouge et les trous d'intercalaire en mode mobile */
+    .page-background {
+      background-image: none;
+    }
+
+    .remove-on-mobile {
+      display: none;
+    }
+  }
