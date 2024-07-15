@@ -4,9 +4,11 @@ import Header from './Header';
 import Note from './Note';
 import Section from './Section';
 import Page from './Page';
+import Projets from './Projets';
+import Exercice4 from './Exercice4';
 
 
-// composition des pages
+// Composition des pages
 const Paper = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 600);
 
@@ -30,7 +32,6 @@ const Paper = () => {
     arrows: true,
   };
 
-  // pagination 
   const pageNumberStyle = {
     fontSize: '16px',
     color: 'var(--custom-red)',
@@ -43,38 +44,48 @@ const Paper = () => {
     <div className="w-full max-w-4xl mx-auto">
       {isMobile ? (
         <div className="vertical-scroll">
-          {/* page 1 */}
+          {/* Page 1 */}
           <Page pageNumber={1} pageNumberStyle={pageNumberStyle} pageNumberClass={pageNumberClass} className="page">
             <Header />
             <Note />
-            <Section start={0} end={1} />
+            <Section start={0} end={0} /> {/* Exercice 1 */}
           </Page>
-          {/* page 2 */}
-          <Page pageNumber={2} pageNumberStyle={pageNumberStyle} pageNumberClass={pageNumberClass} className="page page-2">
-            <Section start={2} end={3} /> {/* Inclure les projets ici */}
+          {/* Page 2 */}
+          <Page pageNumber={2} pageNumberStyle={pageNumberStyle} pageNumberClass={pageNumberClass} className="page">
+            <Section start={1} end={1} /> {/* Exercice 2 */}
           </Page>
-          {/* page 3 */}
-          <Page pageNumber={3} pageNumberStyle={pageNumberStyle} pageNumberClass={pageNumberClass} className="page page-3">
-            <Section start={4} end={4} /> {/* Dernier projet */}
-            <Section start={5} end={5} /> {/* Exercice 4 */}
+          {/* Page 3 */}
+          <Page pageNumber={3} pageNumberStyle={pageNumberStyle} pageNumberClass={pageNumberClass} className="page">
+            <Section start={2} end={2} /> {/* Exercice 3 */}
+            <Projets /> {/* Projets */}
+          </Page>
+          {/* Page 4 */}
+          <Page pageNumber={4} pageNumberStyle={pageNumberStyle} pageNumberClass={pageNumberClass} className="page">
+            <Section start={3} end={3} /> {/* Exercice 4 */}
+            <Exercice4 /> {/* Contact */}
           </Page>
         </div>
       ) : (
         <Slider {...settings}>
-          {/* page 1 */}
+          {/* Page 1 */}
           <Page pageNumber={1} pageNumberStyle={pageNumberStyle} pageNumberClass={pageNumberClass}>
             <Header />
             <Note />
-            <Section start={0} end={1} />
+            <Section start={0} end={1} /> {/* Exercice 1 et Exercice 2 */}
           </Page>
-          {/* page 2 */}
+          {/* Page 2 */}
           <Page pageNumber={2} pageNumberStyle={pageNumberStyle} pageNumberClass={pageNumberClass}>
-            <Section start={2} end={3} /> {/* Inclure les projets ici */}
+            <Section start={2} end={2} /> {/* Exercice 3 */}
+            <div className="desktop-exercice3">
+              <Projets /> {/* Projets */}
+            </div>
           </Page>
-          {/* page 3 */}
+          {/* Page 3 */}
           <Page pageNumber={3} pageNumberStyle={pageNumberStyle} pageNumberClass={pageNumberClass}>
-            <Section start={4} end={4} /> {/* Dernier projet */}
-            <Section start={5} end={5} /> {/* Exercice 4 */}
+            <Section start={3} end={3} /> {/* Exercice 4 */}
+            <div className="desktop-exercice4">
+              <Exercice4 /> {/* Contact */}
+            </div>
           </Page>
         </Slider>
       )}
