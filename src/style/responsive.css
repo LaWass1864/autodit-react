@@ -1,3 +1,4 @@
+/* responsive de la page de presentation */
 @media (max-width: 600px) {
     .presentation-page {
       padding: 10px;
@@ -18,3 +19,5 @@
       padding: 8px 16px;
     }
   }
+
+  
