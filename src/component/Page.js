@@ -3,7 +3,7 @@ import React from 'react';
 
 const Page = ({ children, pageNumber, pageNumberStyle, pageNumberClass }) => {
   return (
-    <div className="shadow-md rounded-xl p-4 sm:p-8 relative page-background no-margin-mobile" style={{ width: '', minHeight: '1080px' }}>
+    <div className="shadow-md rounded-xl p-4 sm:p-8 relative page-background page" style={{ width: '', minHeight: '1080px' }}>
       {/* Marge rouge */}
       <div className="absolute left-40 top-0 bottom-0 w-1 remove-on-mobile" style={{ backgroundColor: 'var(--custom-red)' }}></div>
 

@@ -7,7 +7,6 @@ import Page from './Page';
 
 
 // composition des pages
-// déclaration variable pour le mode mobile
 const Paper = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 600);
 
@@ -51,12 +50,13 @@ const Paper = () => {
             <Section start={0} end={1} />
           </Page>
           {/* page 2 */}
-          <Page pageNumber={2} pageNumberStyle={pageNumberStyle} pageNumberClass={pageNumberClass} className="page">
-            <Section start={2} end={2} />
+          <Page pageNumber={2} pageNumberStyle={pageNumberStyle} pageNumberClass={pageNumberClass} className="page page-2">
+            <Section start={2} end={3} /> {/* Inclure les projets ici */}
           </Page>
           {/* page 3 */}
-          <Page pageNumber={3} pageNumberStyle={pageNumberStyle} pageNumberClass={pageNumberClass} className="page">
-            <Section start={3} end={3} />
+          <Page pageNumber={3} pageNumberStyle={pageNumberStyle} pageNumberClass={pageNumberClass} className="page page-3">
+            <Section start={4} end={4} /> {/* Dernier projet */}
+            <Section start={5} end={5} /> {/* Exercice 4 */}
           </Page>
         </div>
       ) : (
@@ -69,11 +69,12 @@ const Paper = () => {
           </Page>
           {/* page 2 */}
           <Page pageNumber={2} pageNumberStyle={pageNumberStyle} pageNumberClass={pageNumberClass}>
-            <Section start={2} end={2} />
+            <Section start={2} end={3} /> {/* Inclure les projets ici */}
           </Page>
           {/* page 3 */}
           <Page pageNumber={3} pageNumberStyle={pageNumberStyle} pageNumberClass={pageNumberClass}>
-            <Section start={3} end={3} />
+            <Section start={4} end={4} /> {/* Dernier projet */}
+            <Section start={5} end={5} /> {/* Exercice 4 */}
           </Page>
         </Slider>
       )}

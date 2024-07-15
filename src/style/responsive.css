@@ -2,80 +2,89 @@
 
 /* Responsive de la page de présentation */
 @media (max-width: 600px) {
-    body {
-      background-image: none;
-    }
-  
-    header {
-      flex-direction: column;
-      align-items: flex-start;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background-color: #ffffff;
-      z-index: 1000;
-      padding: 10px;
-      border-radius: 0;
-    }
-  
-    .header-center,
-    .header-right {
-      text-align: left;
-    }
-  
-    .desktop-only {
-      display: none;
-    }
-  
-    .mobile-only {
-      display: block;
-    }
-  
-    .presentation-page {
-      padding: 10px;
-    }
-  
-    .animated-text {
-      font-size: 9vw;
-      border-right: 0.1em solid var(--rose-pink);
-    }
-  
-    .presentation-text {
-      font-size: 4.5vw;
-    }
-  
-    .button-text {
-      font-size: 5vw;
-      padding: 8px 16px;
-    }
-  
-    /* Supprimer l'image de fond, la marge rouge, les trous d'intercalaire et la marge en mode mobile */
-    .page-background {
-      background-image: none;
-    }
-  
-    .remove-on-mobile {
-      display: none;
-    }
-  
-    .no-margin-mobile {
-      margin: 0;
-    }
-  
-    /* Pour afficher les pages en mode vertical en mode mobile */
-    .vertical-scroll {
-      display: block;
-    }
-  
-    .vertical-scroll .page {
-      margin-bottom: 20px;
-    }
-
-    .section {
-        margin-left: 0;
-        margin-right: 0;
-        width: 100%;
-      }
+  body {
+    background-image: none;
   }
-  
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 1000;
+    padding: 10px;
+    border-radius: 0;
+  }
+
+  .header-center,
+  .header-right {
+    text-align: left;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+
+  .presentation-page {
+    padding: 10px;
+  }
+
+  .animated-text {
+    font-size: 9vw;
+    border-right: 0.1em solid var(--rose-pink);
+  }
+
+  .presentation-text {
+    font-size: 4.5vw;
+  }
+
+  .button-text {
+    font-size: 5vw;
+    padding: 8px 16px;
+  }
+
+  /* Supprimer l'image de fond, la marge rouge, les trous d'intercalaire et la marge en mode mobile */
+  .page-background {
+    background-image: none;
+  }
+
+  .remove-on-mobile {
+    display: none;
+  }
+
+  .no-margin-mobile {
+    margin: 0;
+  }
+
+  /* Pour afficher les pages en mode vertical en mode mobile */
+  .vertical-scroll {
+    display: block;
+  }
+
+  .vertical-scroll .page {
+    margin-bottom: 20px;
+    min-height: 100vh; /* S'assurer que chaque page occupe au moins toute la hauteur de la vue */
+  }
+
+  .vertical-scroll .page-2 {
+    min-height: 100vh; /* Ajuster en fonction du contenu */
+  }
+
+  .vertical-scroll .page-3 {
+    min-height: 150vh; /* S'assurer que la page 3 est plus grande verticalement */
+  }
+
+  /* Supprimer les marges de la section en mode mobile */
+  .section {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+}
