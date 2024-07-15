@@ -24,7 +24,7 @@ const Note = () => {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail} className="note-appreciation-container">
+    <form ref={form} onSubmit={sendEmail} className="note-appreciation-container remove-on-mobile">
       <div className="note-title-container">
         <div className="note-content">
           <label htmlFor="note" className="note-label"></label>

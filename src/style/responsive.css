@@ -1,10 +1,11 @@
+/* responsive.css */
+
 /* Responsive de la page de présentation */
 @media (max-width: 600px) {
-
     body {
-        background-image: none;
+      background-image: none;
     }
-    
+  
     header {
       flex-direction: column;
       align-items: flex-start;
@@ -12,9 +13,9 @@
       top: 0;
       left: 0;
       width: 100%;
-      background-color: #ffffff; /* Ajoutez une couleur de fond pour le header en mode mobile */
-      z-index: 1000; /* Assurez-vous que le header est au-dessus des autres éléments */
-      padding: 10px; /* Ajustez le padding si nécessaire */
+      background-color: #ffffff;
+      z-index: 1000;
+      padding: 10px;
       border-radius: 0;
     }
   
@@ -30,7 +31,7 @@
     .mobile-only {
       display: block;
     }
-
+  
     .presentation-page {
       padding: 10px;
     }
@@ -48,13 +49,27 @@
       font-size: 5vw;
       padding: 8px 16px;
     }
-
-    /* Supprimer l'image de fond, la marge rouge et les trous d'intercalaire en mode mobile */
+  
+    /* Supprimer l'image de fond, la marge rouge, les trous d'intercalaire et la marge en mode mobile */
     .page-background {
       background-image: none;
     }
-
+  
     .remove-on-mobile {
       display: none;
     }
+  
+    .no-margin-mobile {
+      margin: 0;
+    }
+  
+    /* Pour afficher les pages en mode vertical en mode mobile */
+    .vertical-scroll {
+      display: block;
+    }
+  
+    .vertical-scroll .page {
+      margin-bottom: 20px;
+    }
   }
+  

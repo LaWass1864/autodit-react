@@ -5,6 +5,7 @@ import Note from './Note';
 import Section from './Section';
 import Page from './Page';
 
+
 // composition des pages
 const Paper = () => {
   const settings = {
@@ -14,9 +15,9 @@ const Paper = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
-   
   };
-// pagination 
+
+  // pagination 
   const pageNumberStyle = {
     fontSize: '16px',
     color: 'var(--custom-red)',
@@ -25,26 +26,49 @@ const Paper = () => {
 
   const pageNumberClass = 'custom-page-number';
 
-  return (
-    <div className="w-full max-w-4xl mx-auto">
-      <Slider {...settings}>
+  const isMobile = window.innerWidth <= 600;
+
+  if (isMobile) {
+    return (
+      <div className="w-full max-w-4xl mx-auto vertical-scroll">
         {/* page 1 */}
-        <Page pageNumber={1} pageNumberStyle={pageNumberStyle} pageNumberClass={pageNumberClass}>
+        <Page pageNumber={1} pageNumberStyle={pageNumberStyle} pageNumberClass={pageNumberClass} className="page">
           <Header />
           <Note />
           <Section start={0} end={1} />
         </Page>
         {/* page 2 */}
-        <Page pageNumber={2} pageNumberStyle={pageNumberStyle} pageNumberClass={pageNumberClass}>
+        <Page pageNumber={2} pageNumberStyle={pageNumberStyle} pageNumberClass={pageNumberClass} className="page">
           <Section start={2} end={2} />
         </Page>
         {/* page 3 */}
-        <Page pageNumber={3} pageNumberStyle={pageNumberStyle} pageNumberClass={pageNumberClass}>
+        <Page pageNumber={3} pageNumberStyle={pageNumberStyle} pageNumberClass={pageNumberClass} className="page">
           <Section start={3} end={3} />
         </Page>
-      </Slider>
-    </div>
-  );
+      </div>
+    );
+  } else {
+    return (
+      <div className="w-full max-w-4xl mx-auto">
+        <Slider {...settings}>
+          {/* page 1 */}
+          <Page pageNumber={1} pageNumberStyle={pageNumberStyle} pageNumberClass={pageNumberClass}>
+            <Header />
+            <Note />
+            <Section start={0} end={1} />
+          </Page>
+          {/* page 2 */}
+          <Page pageNumber={2} pageNumberStyle={pageNumberStyle} pageNumberClass={pageNumberClass}>
+            <Section start={2} end={2} />
+          </Page>
+          {/* page 3 */}
+          <Page pageNumber={3} pageNumberStyle={pageNumberStyle} pageNumberClass={pageNumberClass}>
+            <Section start={3} end={3} />
+          </Page>
+        </Slider>
+      </div>
+    );
+  }
 };
 
 export default Paper;
