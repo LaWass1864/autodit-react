@@ -181,11 +181,8 @@ header > div {
 
 .section {
   margin-left: 9rem;
-  /* Alignement avec la marge */
   margin-right: 2rem;
-  /* Ajustement pour qu'il ne dépasse pas */
   width: calc(100% - 6rem);
-  /* Ajustement pour tenir compte des marges */
   box-sizing: border-box;
   height: 130px;
   position: relative;

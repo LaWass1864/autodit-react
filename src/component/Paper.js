@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Slider from 'react-slick';
 import Header from './Header';
 import Note from './Note';
@@ -7,7 +7,21 @@ import Page from './Page';
 
 
 // composition des pages
+// déclaration variable pour le mode mobile
 const Paper = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 600);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 600);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   const settings = {
     dots: true,
     infinite: false,
@@ -26,30 +40,26 @@ const Paper = () => {
 
   const pageNumberClass = 'custom-page-number';
 
-  const isMobile = window.innerWidth <= 600;
-
-  if (isMobile) {
-    return (
-      <div className="w-full max-w-4xl mx-auto vertical-scroll">
-        {/* page 1 */}
-        <Page pageNumber={1} pageNumberStyle={pageNumberStyle} pageNumberClass={pageNumberClass} className="page">
-          <Header />
-          <Note />
-          <Section start={0} end={1} />
-        </Page>
-        {/* page 2 */}
-        <Page pageNumber={2} pageNumberStyle={pageNumberStyle} pageNumberClass={pageNumberClass} className="page">
-          <Section start={2} end={2} />
-        </Page>
-        {/* page 3 */}
-        <Page pageNumber={3} pageNumberStyle={pageNumberStyle} pageNumberClass={pageNumberClass} className="page">
-          <Section start={3} end={3} />
-        </Page>
-      </div>
-    );
-  } else {
-    return (
-      <div className="w-full max-w-4xl mx-auto">
+  return (
+    <div className="w-full max-w-4xl mx-auto">
+      {isMobile ? (
+        <div className="vertical-scroll">
+          {/* page 1 */}
+          <Page pageNumber={1} pageNumberStyle={pageNumberStyle} pageNumberClass={pageNumberClass} className="page">
+            <Header />
+            <Note />
+            <Section start={0} end={1} />
+          </Page>
+          {/* page 2 */}
+          <Page pageNumber={2} pageNumberStyle={pageNumberStyle} pageNumberClass={pageNumberClass} className="page">
+            <Section start={2} end={2} />
+          </Page>
+          {/* page 3 */}
+          <Page pageNumber={3} pageNumberStyle={pageNumberStyle} pageNumberClass={pageNumberClass} className="page">
+            <Section start={3} end={3} />
+          </Page>
+        </div>
+      ) : (
         <Slider {...settings}>
           {/* page 1 */}
           <Page pageNumber={1} pageNumberStyle={pageNumberStyle} pageNumberClass={pageNumberClass}>
@@ -66,9 +76,9 @@ const Paper = () => {
             <Section start={3} end={3} />
           </Page>
         </Slider>
-      </div>
-    );
-  }
+      )}
+    </div>
+  );
 };
 
 export default Paper;
