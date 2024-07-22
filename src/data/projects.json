@@ -17,7 +17,7 @@
     "nom": "Mon Portfolio",
     "description": "Explorez mon portfolio interactif, conçu avec <span class='highlightgreen'>ReactJs</span> et <span class='highlightgreen'>Javascript</span>. Maquetté sur Figma, il intègre Framer Motion pour des animations fluides et Slick Carousel pour une navigation intuitive. Un formulaire EmailJs et le style Tailwind enrichissent cette vitrine dynamique de mes compétences et projets.",
     "image": "/image/portfolioapp.png",
-    "github": "",
+    "github": "https://github.com/LaWass1864/autodit-react",
     "site_web": "https://autodit-react.netlify.app/"
   },
   {

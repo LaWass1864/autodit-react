@@ -5,8 +5,12 @@ import { annotate } from 'rough-notation';
 const Projets = () => {
   useEffect(() => {
     const elements = document.querySelectorAll('.block');
+// crochet rouge autour des liens du site web et du lien
     elements.forEach(element => {
-      const annotation = annotate(element, { type: 'bracket', color: 'var(--custom-red)', padding: [2, 10], brackets: ['left', 'right'], strokeWidth: 3 });
+      const annotation = annotate(element, { type: 'bracket', color: 'var(--custom-red)', 
+        padding: [2, 10], 
+        brackets: ['left', 'right'], 
+        strokeWidth: 3 });
       annotation.show();
     });
 
