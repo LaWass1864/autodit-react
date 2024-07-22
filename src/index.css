@@ -559,15 +559,15 @@ button:hover {
 
 .slick-prev:before {
   color: var(--custom-red) !important;
-  font-size: 55px !important;
-
+  font-size: 40px !important;
+  margin-left: -25px; /* Ajuster pour rapprocher la flèche */
 }
 
 .slick-next:before {
   color: var(--custom-blue) !important;
-  font-size: 55px !important;
+  font-size: 40px !important;
+  margin-right: -25px; /* Ajuster pour rapprocher la flèche */
 }
-
 
 .mark {
   position: relative;
@@ -597,6 +597,7 @@ button:hover {
   transform: rotate(-10deg);
   width: 2em;
 }
+
 
 
 /* Autres styles existants */
