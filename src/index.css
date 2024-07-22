@@ -273,14 +273,9 @@ header > div {
 
 /* Section projet */
 
-.projets {
-  margin-top: 10px;
-}
-
 .projet {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 20px;
 }
 
 .projet-nom {
@@ -291,13 +286,9 @@ header > div {
 
 .projet-description {
   white-space: pre-wrap;
-  /* Permet de gérer les retours à la ligne */
   overflow-wrap: break-word;
-  /* Permet de casser les mots trop longs */
   overflow: hidden;
-  /* Masque le débordement de texte */
   line-height: 2rem;
-  /* Ajouter de l'espace entre les lignes */
   width: calc(100% - 2rem);
   color: var(--custom-blue);
 }
@@ -318,7 +309,7 @@ header > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* Centrage vertical des éléments */
+
 }
 
 .app-container {
