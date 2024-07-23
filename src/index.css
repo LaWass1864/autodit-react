@@ -21,8 +21,8 @@
 }
 
 @font-face {
-  font-family: 'IndieFlower';
-  src: url('./fonts//IndieFlower-Regular.ttf') format('truetype');
+  font-family: 'Sacramento';
+  src: url('./fonts//Sacramento-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -38,8 +38,8 @@
   font-family: 'Merriweather', sans-serif;
 }
 
-.font-indie {
-  font-family: 'Indie', cursive;
+.font-Sacramento {
+  font-family: 'Sacramento', cursive;
 }
 
 /* Variables de couleur personnalisées */
