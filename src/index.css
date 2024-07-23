@@ -21,8 +21,8 @@
 }
 
 @font-face {
-  font-family: 'Caveat';
-  src: url('./fonts//CaveatBrush-Regular.ttf') format('truetype');
+  font-family: 'IndieFlower';
+  src: url('./fonts//IndieFlower-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -31,15 +31,15 @@
 /* Classe pour Gloria Hallelujah */
 .font-gloria {
   font-family: 'Gloria Hallelujah', cursive;
-
 }
+
 /* Classe pour Merriweather Sans */
 .font-merriweather {
   font-family: 'Merriweather', sans-serif;
 }
 
-.font-caveat{
-  font-family: 'Caveat', cursive;
+.font-indie {
+  font-family: 'Indie', cursive;
 }
 
 /* Variables de couleur personnalisées */
@@ -87,7 +87,7 @@ header {
   border-radius: 1rem 1rem 0 0;
 }
 
-header > div {
+header>div {
   flex: 1;
 }
 
@@ -571,13 +571,15 @@ button:hover {
 .slick-prev:before {
   color: var(--custom-red) !important;
   font-size: 40px !important;
-  margin-left: -25px; /* Ajuster pour rapprocher la flèche */
+  margin-left: -25px;
+  /* Ajuster pour rapprocher la flèche */
 }
 
 .slick-next:before {
   color: var(--custom-blue) !important;
   font-size: 40px !important;
-  margin-right: -25px; /* Ajuster pour rapprocher la flèche */
+  margin-right: -25px;
+  /* Ajuster pour rapprocher la flèche */
 }
 
 .mark {
@@ -685,4 +687,3 @@ button:hover {
 .transform {
   transform: translate(0);
 }
-

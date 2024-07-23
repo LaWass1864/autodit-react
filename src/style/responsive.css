@@ -1,104 +1,104 @@
 /* responsive.css */
 
 .desktop-exercice3 {
-    margin-left: 9rem;
-  }
-  
-  .desktop-exercice4 {
-    margin-left: 9rem;
-  }
-  
-  @media (max-width: 600px) {
-    body {
-      background-image: none;
-    }
-  
-   
-    header {
-      flex-direction: column;
-      align-items: flex-start;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background-color: #ffffff;
-      z-index: 1000;
-      padding: 10px;
-      border-radius: 0;
-   
-    }
-.reponse {
-  font-family: 'CaveatBrush', cursive;
+  margin-left: 9rem;
 }
-  
-    .header-center,
-    .header-right {
-      text-align: left;
-    }
-  
-    .desktop-only {
-      display: none;
-    }
-  
-    .mobile-only {
-      display: block;
-    }
-  
-    .presentation-page {
-      padding: 10px;
-    }
-  
-    .animated-text {
-      font-size: 9vw;
-      border-right: 0.1em solid var(--rose-pink);
-    }
-  
-    .presentation-text {
-      font-size: 4.5vw;
-    }
-  
-    .button-text {
-      font-size: 5vw;
-      padding: 8px 16px;
-    }
-  
-    .page-background {
-      background-image: none;
-    }
-  
-    .remove-on-mobile {
-      display: none;
-    }
-  
-    .no-margin-mobile {
-      margin: 0;
-    }
-  
-    .vertical-scroll {
-      display: block;
-    }
-  
-    .vertical-scroll .page {
-      margin-bottom: 20px;
-      min-height: 100vh;
-    }
-  
-    .vertical-scroll .page-2 {
-      min-height: 100vh;
-    }
-  
-    .vertical-scroll .page-3 {
-      min-height: 100vh;
-    }
-  
-    .vertical-scroll .page-4 {
-      min-height: 100vh;
-    }
-  
-    .section {
-      margin-left: 0;
-      margin-right: 0;
-      width: 100%;
-    }
+
+.desktop-exercice4 {
+  margin-left: 9rem;
+}
+
+@media (max-width: 600px) {
+  body {
+    background-image: none;
   }
-  
+
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 1000;
+    padding: 10px;
+    border-radius: 0;
+
+  }
+
+  .reponse {
+    font-family: 'Indie', cursive;
+  }
+
+  .header-center,
+  .header-right {
+    text-align: left;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+
+  .presentation-page {
+    padding: 10px;
+  }
+
+  .animated-text {
+    font-size: 9vw;
+    border-right: 0.1em solid var(--rose-pink);
+  }
+
+  .presentation-text {
+    font-size: 4.5vw;
+  }
+
+  .button-text {
+    font-size: 5vw;
+    padding: 8px 16px;
+  }
+
+  .page-background {
+    background-image: none;
+  }
+
+  .remove-on-mobile {
+    display: none;
+  }
+
+  .no-margin-mobile {
+    margin: 0;
+  }
+
+  .vertical-scroll {
+    display: block;
+  }
+
+  .vertical-scroll .page {
+    margin-bottom: 20px;
+    min-height: 100vh;
+  }
+
+  .vertical-scroll .page-2 {
+    min-height: 100vh;
+  }
+
+  .vertical-scroll .page-3 {
+    min-height: 100vh;
+  }
+
+  .vertical-scroll .page-4 {
+    min-height: 100vh;
+  }
+
+  .section {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+}
