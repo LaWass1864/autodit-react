@@ -30,11 +30,16 @@
 
   .reponse {
     font-family: 'Indie', cursive;
+    font-weight: 400;
+    font-style: bold;
   }
 
   .projet-description {
     font-family: 'Indie', cursive;
+    font-weight: 400;
+    font-style: bold;
   }
+  
   .header-center,
   .header-right {
     text-align: left;
