@@ -11,6 +11,7 @@
 @media (max-width: 600px) {
   body {
     background-image: none;
+    
   }
 
 
@@ -29,15 +30,19 @@
   }
 
   .reponse {
-    font-family: 'Handlee', cursive;
-    font-weight: bold;
+    font-family: 'Handlee', cursive;   
     font-size: 18px;
+    
       }
 
   .projet-description {
-    font-family: 'Handlee', cursive;
-    font-weight: bold;
+    font-family: 'Handlee', cursive;   
     font-size: 18px;
+    
+      }
+
+    .question {
+        font-size: 20px;
       }
 
   .header-center,
