@@ -53,10 +53,11 @@
   --custom-blue: #0000ff;
 }
 
-/* Typographie du site */
 body {
-  background-image: url('/public/image/background-portfolio.webp');
-
+  background-color: #d4d4e3;
+  background-image:  radial-gradient(#9798a5 0.8px, transparent 0.8px), radial-gradient(#9798a5 0.8px, #d4d4e3 0.8px);
+  background-size: 32px 32px;
+  background-position: 0 0,16px 16px;
 }
 
 /* Classe pour texte de couleur personnalisée */
