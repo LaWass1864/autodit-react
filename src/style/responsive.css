@@ -29,16 +29,16 @@
   }
 
   .reponse {
-    font-family: 'Sacramento', cursive;
-    font-weight: 400;
-    font-style: bold;
-  }
+    font-family: 'Handlee', cursive;
+    font-weight: bold;
+    font-size: 18px;
+      }
 
   .projet-description {
-    font-family: 'Sacramento', cursive;
-    font-weight: 400;
-    font-style: bold;
-  }
+    font-family: 'Handlee', cursive;
+    font-weight: bold;
+    font-size: 18px;
+      }
 
   .header-center,
   .header-right {

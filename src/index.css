@@ -21,8 +21,8 @@
 }
 
 @font-face {
-  font-family: 'Sacramento';
-  src: url('./fonts//Sacramento-Regular.ttf') format('truetype');
+  font-family: 'Handlee';
+  src: url('./fonts//Handlee-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -38,8 +38,8 @@
   font-family: 'Merriweather', sans-serif;
 }
 
-.font-Sacramento {
-  font-family: 'Sacramento', cursive;
+.font-handlee {
+  font-family: 'Handlee', cursive;
 }
 
 /* Variables de couleur personnalisées */
